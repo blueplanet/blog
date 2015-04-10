@@ -2,6 +2,7 @@
 lock '3.4.0'
 
 set :application, 'blog'
+set :repo_url, 'git@github.com:blueplanet/blog.git'
 set :deploy_to, 'var/www/blog'
 set :log_level, :debug
 
