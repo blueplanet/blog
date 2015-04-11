@@ -12,9 +12,10 @@ set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public
 set :bundle_env_variables, { nokogiri_use_system_libraries: 1 }
 
 namespace :deploy do
- desc 'Restart application'
- task :restart do
-   invoke 'unicorn:restart'
- end
+  desc 'Restart application'
+  task :restart do
+    invoke 'unicorn:restart'
+  end
 end
+
 after 'deploy:publishing', 'deploy:restart'
