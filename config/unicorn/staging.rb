@@ -1,5 +1,5 @@
 # staging.rb
-root = "/var/www/myApp/current"
+root = "/var/www/blog/current"
 working_directory root
 pid "#{root}/tmp/pids/unicorn.pid"
 stderr_path "#{root}/log/unicorn.log"
