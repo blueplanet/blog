@@ -52,3 +52,9 @@ production:
   database: blog_production
   username: blog
   password: blog_password
+
+staging:
+  <<: *default
+  database: blog_production
+  username: blog
+  password: blog_password
