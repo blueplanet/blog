@@ -10,7 +10,7 @@ role :web, %w{vagrant@192.168.33.11}
 role :db, %w{vagrant@192.168.33.11}
 
 set :ssh_options, {
-  keys: [File.expand_path('/Users/gyo/sandbox/chef-repo/.vagrant/machines/default/virtualbox/private_key')],
+  keys: [File.expand_path('/Users/gyo/sandbox/rails-nginx-unicorn/.vagrant/machines/default/virtualbox/private_key')],
   forward_agent: true,
   auth_methods: %w(publickey)
 }
